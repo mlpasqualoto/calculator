@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+#totalScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #3B1E54;
+}
+
+#leftScreen {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftScreen img {
+    width: 30vw;
+}
+
+#rightScreen {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxCalc {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #573277;
+    border-radius: 20px;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.calc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boxTop {
+    height: 25%;
+    width: 100%;
+    padding: 20px;
+}
+
+.boxResult {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    border: 1px solid black;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 20px;
+}
+
+.boxResult h1 {
+    font-size: 2.8em;
+}
+
+.boxBot {
+    height: 75%;
+    width: 100%;
+    padding: 20px;
+}
+
+.boxBtn {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.btn {
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #EEEEEE;
+    font-size: 1.3em;
+    font-weight: bolder;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.6);
+    border: none;
+    transition: transform 0.1s, background-color 0.2s;
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    background-color: grey;
+    box-shadow: none;
+}
+
+#Cbtn,
+#CEbtn,
+#divBtn,
+#mulBtn,
+#subBtn,
+#sumBtn,
+#resultBtn {
+    background-color: #00FF9C;
+}
+
+#resultBtn {
+    grid-column: 4;
+    grid-row: 4 / 6;
+}
+
+#zeroBtn {
+    grid-column: 1 / 3;
+    grid-row: 5;
+}
