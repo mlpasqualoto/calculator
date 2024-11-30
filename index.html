@@ -18,29 +18,29 @@
         <div class="calc">
           <div class="boxTop">
             <div class="boxResult">
-              <h1>450</h1>
+              <h1 id="result"></h1>
             </div>                         
           </div>
           <div class="boxBot">
             <div class="boxBtn">
-              <button class="btn" class="btnSide" id="Cbtn">C</button>
-              <button class="btn" id="CEbtn">CE</button>
-              <button class="btn" id="divBtn"><i class="fa-solid fa-divide"></i></button>
-              <button class="btn" id="mulBtn"><i class="fa-solid fa-xmark"></i></button>
-              <button class="btn" id="7Btn">7</button>
-              <button class="btn" id="8Btn">8</button>
-              <button class="btn" id="9Btn">9</button>
-              <button class="btn" id="subBtn">-</button>
-              <button class="btn" id="4Btn">4</button>
-              <button class="btn" id="5Btn">5</button>
-              <button class="btn" id="6Btn">6</button>
-              <button class="btn" id="sumBtn">+</button>
-              <button class="btn" id="1Btn">1</button>
-              <button class="btn" id="2Btn">2</button>
-              <button class="btn" id="3Btn">3</button>
-              <button class="btn" id="resultBtn">=</button>
-              <button class="btn" id="zeroBtn">0</button>
-              <button class="btn" id="virBtn">,</button>
+              <button class="btn" class="btnSide" id="Cbtn" onclick=reset()>C</button>
+              <button class="btn" id="CEbtn" onclick=clean()>CE</button>
+              <button class="btn" id="divBtn" onclick=getOperator("/")><i class="fa-solid fa-divide"></i></button>
+              <button class="btn" id="mulBtn" onclick=getOperator("*")><i class="fa-solid fa-xmark"></i></button>
+              <button class="btn" id="7Btn" onclick=getNumber(7)>7</button>
+              <button class="btn" id="8Btn" onclick=getNumber(8)>8</button>
+              <button class="btn" id="9Btn" onclick=getNumber(9)>9</button>
+              <button class="btn" id="subBtn" onclick=getOperator("-")>-</button>
+              <button class="btn" id="4Btn" onclick=getNumber(4)>4</button>
+              <button class="btn" id="5Btn" onclick=getNumber(5)>5</button>
+              <button class="btn" id="6Btn" onclick=getNumber(6)>6</button>
+              <button class="btn" id="sumBtn" onclick=getOperator("+")>+</button>
+              <button class="btn" id="1Btn" onclick=getNumber(1)>1</button>
+              <button class="btn" id="2Btn" onclick=getNumber(2)>2</button>
+              <button class="btn" id="3Btn" onclick=getNumber(3)>3</button>
+              <button class="btn" id="resultBtn" onclick=getResult()>=</button>
+              <button class="btn" id="zeroBtn" onclick=getNumber(0)>0</button>
+              <button class="btn" id="virBtn" onclick=getNumber(".")>.</button>
             </div>
           </div>
         </div>
