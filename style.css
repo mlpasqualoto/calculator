@@ -24,7 +24,7 @@ body * {
 }
 
 #leftScreen img {
-    width: 30vw;
+    width: 25vw;
 }
 
 #rightScreen {
@@ -129,4 +129,73 @@ body * {
 #zeroBtn {
     grid-column: 1 / 3;
     grid-row: 5;
+}
+
+@media only screen and (max-width: 950px) {
+    #leftScreen img {
+        width: 40vw;
+    }
+
+    .boxCalc {
+        width: 80%;
+        height: 60%;
+        box-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .boxResult {
+        box-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .btn {
+        box-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: hidden;
+        background-color: #3B1E54;
+        touch-action: manipulation;
+    }
+
+    #totalScreen {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #leftScreen {
+        width: 0;
+        height: 0;
+    }
+
+    #leftScreen img {
+        display: none;
+    }
+
+    .boxCalc {
+        width: auto;
+        height: 60%;
+        padding: 0;
+    }
+
+    .boxResult {
+        width: 100%;
+        height: 70px;
+    }
+
+    .boxResult h1 {
+        font-size: 1.8em;
+    }
+
+    .calc {
+        padding: 5px;
+    }
+
+    .boxTop {
+        padding: 15px 15px 10px 15px;
+    }
+
+    .boxBot {
+        padding: 15px;
+    }
 }

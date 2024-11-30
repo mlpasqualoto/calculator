@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Calculadora</title>
@@ -48,6 +48,23 @@
     </div>
   </div>
 
+  <!-- Impede o zoom em dispositivos móveis -->
+  <script> 
+    document.addEventListener('gesturestart', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('dblclick', function (e) {
+        e.preventDefault();
+    });
+
+    // Alternativa para bloquear o zoom em toque duplo (opcional)
+    document.addEventListener('touchstart', function (e) {
+        if (e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
