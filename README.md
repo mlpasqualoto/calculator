@@ -6,11 +6,11 @@ Este é um projeto de calculadora interativa desenvolvido com HTML, CSS e JavaSc
 
 - **Desktop**
 
-![Calculadora Desktop](https://github.com/user-attachments/assets/calculator-desktop-example.png)
+![Captura de tela 2024-11-30 032415](https://github.com/user-attachments/assets/298016ad-b03b-414b-ac4a-dbbb24b462e6)
 
 - **Mobile**
 
-![Calculadora Mobile](https://github.com/user-attachments/assets/calculator-mobile-example.png)
+![essa!!!](https://github.com/user-attachments/assets/64a73252-7a58-4d9a-800a-bee4a72ac6a0)
 
 ## Funcionalidades
 
